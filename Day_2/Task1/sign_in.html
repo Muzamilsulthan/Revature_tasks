@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(186, 185, 185);
+        }
+        form{
+            text-align: center;
+        }
+        fieldset{
+            background-color: whitesmoke;
+            width: 500px;
+            margin-top: 40px;
+            margin-left: 380px;
+        }
+        legend{
+            text-align: center;
+        }
+        #linking{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset>
+            <legend><h1>Sign Up </h1></legend>
+            <label for="userFirstName">First Name : </label>
+            <input type="text" id="userFirstName" name="firstName">
+            <br><br>
+
+            <label for="userLastName">Last Name : </label>
+            <input type="text" id="userLastName" name="lastName">
+            <br><br>
+
+            <label for="userMail">Mail id : </label>
+            <input type="email" id="userMail" name="mailId">
+            <br><br>
+
+            <label for="genderMale">Gender : </label>
+            <input type="radio" id="genderMale" name="Gender" value="Male">
+            <label for="genderMale">Male</label>
+            <input type="radio" id="genderFemale" name="Gender" value="Female">
+            <label for="genderFemale">Female</label>
+            <input type="radio" id="other" name="Gender" value="Other">
+            <label for="other">Other</label>
+            <br><br>
+
+            <label for="userAge">Age</label>
+            <input type="number" id="userAge" name="Age">
+            <br><br>
+            <label for="userNumber">Ph:No : </label>
+            <input type="text" id="userNumber" name="PH:NO" pattern="[0-9]{10}">
+            <br><br>
+
+            <label for="setPassword">Set Password : </label>
+            <input type="password" id="setPassword" name="SetPassword">
+            <br><br>
+
+            <label for="confirmPassword">Confirm Passworrd : </label>
+            <input type="text" id="confirmPassword" name="ConfirmPassword">
+            <br><br>
+
+            <button type="submit" id="submit">Sign Up</button>
+
+        </fieldset>
+    </form>
+    <h2 id="linking"><a href="./login.html">Have account ? Click here to login </a></h2>
+</body>
+</html>
